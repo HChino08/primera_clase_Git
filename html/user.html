@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET SHOP</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+            <div class="d-flex justify-content-between container-fluid">
+                <a class="navbar-brand" href=""> <img
+                    src="./images/logo2.png" alt="Logo de pagian web"
+                    width="100">
+                </a>
+                    
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Peliculas</a></li>
+                                <li><a class="dropdown-item" href="#">Series</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Tendencia</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Quienes Somos</a>
+                        </li>
+
+                        
+                    </ul>
+                  
+                    <div>
+                        <button type="button" class="btn btn-secondary">Iniciar Sesion</button>
+                        <button type="button" class="btn btn-secondary">Registrate</button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        </header>
+    </body>
+    <!-- Modal register-->
+    <div class="modal fade themodales" id="exampleModal" tabindex="2" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">REGISTER</h1>
+                    <button type="button" class="btn-close buttons" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label emailpass">USER</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                maxlength="30" minlength="3" required pattern="[a-z]{3-30}">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label emailpass">PASSWORD</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" maxlength="30"
+                                minlength="3" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label emailpass">REPEAT PASSWORD</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" maxlength="30"
+                                minlength="3" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary buttons">REGISTER</button>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="form-text siya">Si ya tiene cuenta haga click en Login</div>
+                        <button type="button" class="btn btn-dark buttons" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            LOGIN
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin Register -->
+    <!-- Modal contacto -->
+    <div class="modal fade themodales" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">CONTACT</h1>
+                    <button type="button" class="btn-close buttons" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-title fs-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-9">
+                                <h1 class="mb-3"> </h1>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="your-name" class="form-label">NAME</label>
+                                            <input type="text" class="form-control" id="your-name" name="your-name"
+                                                required maxlength="20" minlength="3" required pattern="[a-z][A-Z]{3-20}>
+                       </div>
+                       <div class=" col-md-6">
+                                            <label for="your-surname" class="form-label">LAST NAME</label>
+                                            <input type="text" class="form-control" id="your-surname"
+                                                name="your-surname" required maxlength="20" minlength="3" required
+                                                pattern="[a-z][A-Z]{3-20}>
+                       </div>
+                       <div class=" col-md-6">
+                                            <label for="your-email" class="form-label">EMAIL</label>
+                                            <input type="email" class="form-control" id="your-email" name="your-email"
+                                                required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="your-subject" class="form-label">SUBJECT (0 _ 0)</label>
+                                            <input type="text" class="form-control" id="your-subject"
+                                                name="your-subject">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="your-message" class="form-label">MESSAGE</label>
+                                            <textarea class="form-control" id="your-message" name="your-message"
+                                                rows="5" required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <button data-res=" >" type="submit"
+                                                        class="btn btn-primary w-100 fw-bold">SEND</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin CONTACTO -->
+    <header>
+        <nav class="navbar-expand-lg navbar-dark bg-warning navbar catnavmain fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">PET SHOP <img class="navimg" src="./ASSETS/IMG/logo33.png" w="50%"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse catnav" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+
+                        <!-- LOGOUT -->
+                        <a class="nav-link linknavbar" href="./index.html">LOGOUT</a>
+<!-- Fin LOGOUT -->
+
+                        <!-- Inicia CONTACTO -->
+                        <button type="button" class="btn btn-warning reglog" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">
+                            CONTACT
+                        </button>
+
+
+                        <a class="nav-link linknavbar" href="./aboutus.html">ABOUT US</a>
+
+                        <a class="nav-link linknavbar" href="./index.html">HOME</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- INICIA MAIN -->
+
+    <main>
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slidecarru">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./ASSETS/IMG/Screenshot_1.png" class="d-block mx-auto w-90 img-fluid" alt="...">
+                    
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./ASSETS/IMG/Screenshot_2.png" class="d-block  mx-auto w-90 img-fluid "
+                        alt="...">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="./ASSETS/IMG/Screenshot_3.png" class="d-block  mx-auto  w-90 img-fluid" alt="...">
+                    
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-3 tarjeta">
+                    <div class="cards">
+
+                        <img src="./ASSETS/IMG/card1.png" class="card-img-top" alt="gatogrunge">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">ESTILO GRUNGE</h5>
+                            <p class="card-text"> Son un símbolo de resistencia, de abrazar la oscuridad y encontrar
+                                la
+                                belleza en la imperfección.</p>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn-dark see">SEE
+                                MORE</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 tarjeta">
+                    <div class="cards">
+
+                        <img src="https://i.pinimg.com/236x/93/41/07/934107f45de97d9dd6d2566425832e79.jpg"
+                            class="card-img-top" alt="gatokawaii">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">ESTILO KAWAII</h5>
+                            <p class="card-text"> Hoy en día se usa para referirse a cualquier cosa que sea adorable
+                                o linda.</p>
+                            <a href="" class="btn btn-dark see">SEE
+                                MORE</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 tarjeta">
+                    <div class="cards">
+
+                        <img src="./ASSETS/IMG/Cat Tattoo Designs - The Body is a Canvas.jpg" class="card-img-top"
+                            alt="gatotribal">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">ESTILO TRIBAL</h5>
+                            <p class="card-text"> Son aquellos que representan símbolos nativos de tribus como la de
+                                los maorí.</p>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn-dark see">SEE
+                                MORE</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 tarjeta">
+                    <div class="cards">
+
+                        <img src="./ASSETS/IMG/gato realista 2.jpg" class="card-img-top" alt="gatorealismo">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">ESTILO REALISTA</h5>
+                            <p class="card-text"> Es un tatuaje que plasma una imagen real, ya sea sobre una foto de
+                                referencia o sobre algo al natural.</p>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="btn btn-dark see">SEE
+                                MORE</a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- TERMINA MAIN -->
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 mediafooter">
+                    <h2 class="socialfooter">
+                        SOCIAL MEDIA
+                    </h2>
+                    <p>
+                        FOLLOW US IN OUR SOCIAL MEDIA WICH ARE AWESOME
+                    </p>
+                    <div>
+                        <ul class="d-flex gap-3 list-unstyled uliconos">
+                            <li><a href="#" class="iconored"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#" class="iconored"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#" class="iconored"><i class="bi bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <h2 class="footer-brand">
+                        <a class="footer-brand " href="#">PET SHOP</a>
+                    </h2>
+                    <img src="./ASSETS/IMG/logo33.png" class="img-fluid">
+
+                </div>
+                <div class="col-md-4 aboutusfooter">
+                    <h2 class="ecommercefooter">
+                        ECOMMERCE
+                    </h2>
+                    <p>
+                        BROWSE & DISCOVER MILLIONS OF PRODUCTS. READ COSTUMER REVIEWS AND FIND BEST SELLERS. WE SHIP TO
+                        OVER 100 INTERNATIONAL DESTINATIONS, RIGHT TO YOUR DOORSTEP.
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <footer class="container p-4 rounded">
+        <div class="d-lg-flex justify-content-between">
+
+            <div class="copyright sofia">
+                <p> BY <a href="#" target="_blank">SOFIA YACUMO</a></p>
+            </div>
+            <div>
+                <ul class="d-flex gap-3 list-unstyled iconored">
+                    <li><a href="#" class="iconored"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="iconored"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#" class="iconored"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> -->
+
+</body>
+
+</html>
